@@ -1,0 +1,72 @@
+@import "./base/_reset.scss";
+@import "./base/**";
+@import "./modules/**";
+@import "./pages/about.scss";
+@mixin font-base {
+    padding: 0;
+    margin: 0;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+body {
+    background-color: aqua;
+    .form {
+        position: fixed;
+        z-index: 1;
+        margin: 5px;
+    }
+}
+
+.container {
+    width: 560px;
+    background-color: white;
+    margin: 0 auto;
+    header,
+    section {
+        position: fixed;
+        text-align: center;
+        width: 560px;
+        background-color: white;
+        .logo {
+            width: 120px;
+            padding: 10px;
+        }
+    }
+    #video {
+        top: 50px;
+    }
+    main {
+        padding: 340px 18px 10px;
+        article {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 8px 12px;
+            border: 2px solid white;
+            margin: 0 auto;
+            &:hover {
+                border: 2px solid orange;
+                border-radius: 10px;
+            }
+            .thumb {
+                height: 100px;
+            }
+            .details {
+                padding: 8px 22px;
+                overflow: hidden;
+                h4 {
+                    @include font-base();
+                }
+                p {
+                    @include font-base();
+                    color: grey;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
