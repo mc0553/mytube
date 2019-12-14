@@ -5,7 +5,7 @@ $(document).ready(function () {
 
       $('main').empty();
         let inputTask = $('#search-word').val();
-        let key = 'AIzaSyCljAV5p251UlnxfO1kzeZkk93GWHH68H0';
+        let key = 'ここにGoogleのキー挿入';
         let URL = 'https://www.googleapis.com/youtube/v3/search';
 
         let options = {
