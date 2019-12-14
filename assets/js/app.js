@@ -2,7 +2,7 @@
 // プレイリストIDを元にリスト化する方法
 // $(document).ready(function () {
 
-//   var key = 'AIzaSyCljAV5p251UlnxfO1kzeZkk93GWHH68H0';
+//   var key = 'ここにgoogleキーを挿入';
 //   var playlistId = 'PL2fnLUTsNyq7A335zB_RpOzu7hEUcSJbB';
 //   var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
 
